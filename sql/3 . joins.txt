@@ -1,0 +1,31 @@
+los joins son una manera mas eficiente que las subconsultas para unir tablas
+
+Tipo: inner joins,left joins,right joins, full joins, cross joins entre otros
+
+Ejemplo de inner join de forma implicita:
+SELECT * FROM tabla1 a,tabla2 b WHERE a.campo1 = b.campo1 --uniendo 2 tablas donde el campo 1 sea igual
+
+ejemplo de inner join de forma explicita:
+SELECT * FROM tabla1 a INNER JOIN tabla2 b ON a.campo1 = b.campo1 --hace lo mismo que el ejemplo de arriba
+
+ejemplo de cross join:
+SELECT * FROM tabla1,tabla2 --cross join de foma implicita
+
+SELECT * FROM tabla1 CROSS JOIN tabla2 -- cross join de forma explicita 
+
+--LEFT JOIN
+SELECT * FROM tabla1 t1 LEFT JOIN tabla2 t2 WHERE t1.campo1 = t2.campo1 -- muestra toda la tabla 1 y agrega valores de la tabla2 si coinciden
+--NOTA: A diferencia del INNER JOIN, el LEFT JOIN muestra valores de la tabla 1 sin que tengan que coincidir con la tabla 2 y el right join no se puede hacer en sqlite
+
+ejemplo de full outer join:
+SELECT * FROM tabla1 a FULL OUTER JOIN tabla2 b WHERE b.campo1 = a.campo1 -- muestra todas las tablas y su relacion
+--NOTA :en sqlite no se puede hacer full join
+
+imitacion de un full join en sqlite
+
+SELECT * FROM tabla1 a LEFT JOIN tabla2 b WHERE a.campo1 = b.campo1 
+UNION -- con union se pueden unir 2 consultas y eliminar registros repetidos  
+SELECT * FROM tabla2 c LEFT JOIN tabla1 d WHERE ccampo1 = d.campo1 -- con UNION ALL se muestra todo a pesar de que se repita un registro
+-- el comportamiento de este codigo es similar al full join  
+--NOTA : es recomendable definir que campos se van a mostrar en lugar de usar * en caso contrario se meclaran los campos y no se pueden unir si no tienen las 
+-- mismas columnas

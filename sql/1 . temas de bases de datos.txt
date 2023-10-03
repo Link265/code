@@ -1,0 +1,90 @@
+--crear una tabla
+CREATE TABLE 'nombre de tabla'(
+	'campo1' INTEGER, -- estableciendo el campo 1 como de tipo entero
+	'campo2' TEXT, -- estableciendo el campo2 como de tipo texto
+	'campo3' REAL, -- estableciendo el campo3 como de tipo numero con punto decimal
+	'campo4' NUMERIC, -- el tipo numeric se usa para cantidades con mucha mas presicion
+	PRIMARY KEY('campo1' AUTOINCREMENT) -- estableciendo el campo1 como la clave primaria y haciendolo autoincrementable
+	FOREING KEY('campo2') REFERENCE 'tabla2'('campo2')-- estableciendo una llave foranea
+)
+
+SELECT: se utliza para realizar una consulta 
+ejemplo 1: SELECT * FROM tabla -- muestra todo de la tabla
+ejemplo 2: SELECT campo1,campo2 FROM tabla -- muestra el campo 1 y 2 de la tabla
+
+INSERT INTO: se utliza para insertar valores en la tabla
+ejemplo : INSERT INTO tabla (campo1,campo2) VALUES (valor1,valor2),(valor3,valor4) -- agrega el valor 1 y 3 al campo 1 y el valor 2 y 4 al campo 2
+
+DELETE: puede borrar toda una tabla
+ejemplo: DELETE FROM tabla -- borra toda la tabla, normalmente se utliza con condicionales para borrar registros especificos
+
+UPDATE: se utiliza para actualizar valores de la tabla
+ejemplo : UPDATE tabla SET campo1 = valorCambiado -- cambia todo el campo 1 al nuevo valor, normalmente se utliza con condicionales
+
+ORDER BY : se utiliza para ordenar valores en una consulta (NO modifica la tabla original)
+ejemplo 1 : SELECT * FROM tabla ORDER BY campo3 --oraganiza los valores en base a al campo 3(valores nulos,numeros,caracteres especiales,letras en este orden)
+ejemplo 2 : SELECT * FROM tabla ORDER BY campo3 DESC -- ordena de forma descente
+ejemplo 3 : SELECT * FROM tabla ORDER BY campo3 ASC NULLS LAST -- ordena de forma ascente(por defecto) y conlocando los valores nulos al final
+ejemplo 4 : SELECT * FROM Customers ORDER BY random() -- ordena los valores aleatoriamente
+
+DISTINCT : solo permite mostrar valores que no se hayan repetido
+ejemplo 1 : SELECT DISTINCT campo1 FROM tabla -- muestra solo los valores de campo1 un vez y si se repite no lo mostrara
+
+LIMIT : muestra solo un limite de valores
+ejemplo : SELECT * FROM tabla LIMIT 5 -- mostrara solo los primeros 5 valores
+
+WHERE: se utiliza como condicional
+ejemplo : DELETE FROM tabla WHERE campo1 > 20 -- borra todos los registros cuyo campo1 se mayor a 20
+
+AS: puede interpretar una columna y mostrarla con otro nombre
+ejemplo 1 : SELECT campo1 AS campo FROM tabla -- mostrara el "campo1" como "campo"
+
+BETWEEN : se utiliza para rangos
+ejemplo 1 : SEELCT * FROM tabla WHERE campo1 BETWEEN 20 AND 40 -- muestra los valores si el campo 1 esta entre 20 y 40
+ejemplo 2 : SELECT * FROM tabla WHERE fecha BETWEEN '2005-1-1' AND '2023-12-31' -- muestra todos los valores con fecha entre 2005 y 2023
+
+LIKE : funciona como un operador de comparacion pero ademas permite usar diferentese "comodines"
+ejemplo 1 : SELECT * FROM tabla WHERE campo1 LIKE 'ab%' -- muestra todos lo valores que empiecen por ab y tenga cualquier cosa despues
+ejemplo 2 : SELECT * FROM tabla WHERE campo1 LIKE '%ab%' -- muestra todos los registros que tengan ab en el medio y que empience y terminen con cualquier cosa
+ejemplo 3 : SELECT * FROM tabla WHERE campo1 LIKE 'a__' -- muestra lo que empiece por a y tenga 2 letras cualesquiera despues
+--NOTA: los operadores % y _ se pueden combinar sin ningun problema
+
+IS NOT NULL : como su nombre indica elimina los valores nulos
+ejemplo : SELECT * FROM tabla WHERE campo1 IS NOT NULL -- muestra el registro si el campo 1 no es null
+
+IN : se utiliza para abreviar comparaciones con OR
+ejemplo : SELECT * FROM tabla WHERE campo1 IN (3,4,5) --comprueba si campo1 es igual a 3 o 4 o 5 y si se cumple lo muestra
+
+SUM(): suma todos los valores de un campo
+ejemplo 1 : SELECT SUM(campo1) FROM tabla -- muestra la suma de todos los valores del campo 1
+
+COUNT(): cuenta el numero registros en un campo especifico
+ejemplo: SELECT count(campo1) FROM tabla -- muestra el numero de valores que esten en ese campo
+
+AVG(): obtiene el promedio de los valores de un campo
+ejemplo: SELECT AVG(campo1) FROM tabla -- obteniendo el promedio de los valores de un campo
+
+round(): redondea los valores de los campos
+ejemplo 1 : SELECT round(campo1) FROM tabla -- mostrando los valores redondeados
+ejemplo 2 : SELECT round(campo1,2) FROM tabla -- redondeando los valores y conservando 2 decimales
+--NOTA : el segundo parametro de round es para los decimales
+
+min() y max() : retorna el minimo y maximo de los valores
+ejemplo : SELECT ProductName,min(Price) FROM Products -- mostrando unicamente el producto que vale menos
+
+GROUP BY : funciona para agrupar valores iguales
+ejemplo 1 : SELECT AVG(Price) AS promedio FROM Products GROUP BY Proveedores -- obteniendo el promedio de precios de cada proveedor por separado
+ejemplo 2 : SELECT max(Price) AS maximo FROM Products GROUP BY proveedores -- obteniendo el precio maximo de cada proveedor
+
+HAVING : sirve para filtrar grupos, para filtrar despues de usar group
+ejemplo 1 : SELECT AVG(Price) as promedio FROM Products GROUP BY proveedor HAVING promedio > 40 -- obteniendo los registros cuyos promedios sean mayores a 40
+-- NOTA: el WHERE no se puede usar con funciones de agragacion en cambio el HAVING si
+
+
+
+
+
+
+
+
+	

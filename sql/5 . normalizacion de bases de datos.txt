@@ -1,0 +1,15 @@
+la normalizacion de bases de bases de datos son diferentes formas para organizar mejor la informacion
+
+First Normal Form(1NF): NO colocar mas de un valor en un columna, cada elemento debe ir por separado como por ejemplo en vez de colocar el nombre y
+apellido en una sola columna es mejor crear una columna diferente para cada uno
+
+Second Normal Form(2NF): NO colocar columnas que no dependan al 100% de la clave primaria, ejemplo en vez de colocar los datos de producto en la tabla de
+pedidos mejor ten una una tabla que este aparte solamente de productos y relacionala con la otra con el id del producto
+--NOTA: dependencia funcional parcial 
+
+Thirst Normal Form(3NF) : no crear dependencias transitivas, separar en 2 tablas si un atributo a depende de un atributo b que depende la clave primaria,
+ejemplo si la ciudad depende del estado es mejor crear una tabla separada para la ubicación 
+NOTA: ver el momento 5:42:31 de video de dalto de bases de datos
+
+Fourth Normal Form(4NF) : no crear dependencias multivaluadas, que ocurren cuando tienes una columna que se relaciona con diferentes valores de otra columna
+--NOTA: ver el momento 5:43

@@ -1,0 +1,20 @@
+Explicacion basica para entender subconsultas
+
+SELECT campo1,campo2 FROM tabla --retorna una tabla
+SELECT campo1 FROM tabla -- retorna una columna
+
+ejemplo basico de una subconsulta
+
+SELECT campo1,(SELECT otro_campo FROM tabla2) FROM tabla -- mostrando informacion de 2 tablas juntas
+--NOTA: SOLO se mostrara el primer valor de tabla2 de la subconsulta repetidamente porque en cada llamada no puede mostrar mas de un registro
+
+SELECT campo1,campo2,(SELECT otro_campo FROM tabla2 WHERE otro_campo_mas_de_esta_tabla = tabla1.campo1) FROM tabla1 -- mostrando 2 tablas relacionadas por el campo 1
+--NOTA: aquie el valor de la subconsulta NO se repite porque tenemos un valor diferente en cada llamada gracias al condicional
+
+--colocarle un alias a la tabla
+SELECT campo1,(SELECT campo FROM tabla2 WHERE TA.campo1 = campo_de_esta_tabla) FROM [tabla] TA -- renombrando la tabla como TA para hacerlo mas corto
+-- NOTA: es parecido a el operador AS, tambien se puede renombrar utilizando AS pero es mas largo y los corchetes no son necesarios 
+
+
+--llamar a 2 tablas en un solo select
+SELECT tabla1.campo , tabla2.campo FROM tabla1,tabla2

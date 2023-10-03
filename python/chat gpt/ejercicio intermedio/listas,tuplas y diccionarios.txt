@@ -1,0 +1,37 @@
+¡Claro! Aquí te dejo algunos ejercicios para practicar con listas, tuplas y diccionarios en Python:
+
+## Listas:
+
+1. Escribir un programa que pida al usuario una lista de números y calcule su suma, promedio y desviación estándar.
+
+2. Escribir un programa que pida al usuario una lista de palabras y devuelva la lista ordenada alfabéticamente.
+
+3. Escribir un programa que pida al usuario una lista de números y devuelva la lista sin elementos duplicados.
+
+4. Escribir un programa que pida al usuario una lista de números y elimine los elementos impares.
+
+5. Escribir un programa que pida al usuario dos listas y devuelva una lista con los elementos que se encuentran en ambas listas.
+
+## Tuplas:
+
+1. Escribir un programa que pida al usuario una tupla de números y devuelva la suma, el mínimo y el máximo de los números.
+
+2. Escribir un programa que pida al usuario una tupla de palabras y devuelva la tupla con las palabras ordenadas alfabéticamente.
+
+3. Escribir un programa que pida al usuario una tupla de números y devuelva una tupla con los elementos duplicados eliminados.
+
+4. Escribir un programa que pida al usuario una tupla de númerosy devuelva una tupla con los elementos elevados al cuadrado.
+
+5. Escribir un programa que pida al usuario dos tuplas y devuelva una tupla con los elementos que se encuentran en ambas tuplas.
+
+## Diccionarios:
+
+1. Escribir un programa que pida al usuario una lista de números y devuelva un diccionario con las frecuencias de cada número.
+
+2. Escribir un programa que pida al usuario una lista de nombres y edades y devuelva un diccionario con los nombres como claves y las edades como valores.
+
+3. Escribir un programa que pida al usuario un diccionario y devuelva una lista con las claves del diccionario ordenadas alfabéticamente.
+
+4. Escribir un programa que pida al usuario un diccionario y devuelva una lista con los valores del diccionario ordenados de menor a mayor.
+
+5. Escribir un programa que pida al usuario dos diccionarios y devuelva un diccionario con las claves y valores de ambos diccionarios. Si una clave está presente en ambos diccionarios, se deben sumar los valores correspondientes.

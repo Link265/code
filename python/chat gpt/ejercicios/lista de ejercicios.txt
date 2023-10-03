@@ -1,0 +1,45 @@
+¡Claro! Aquí te dejo algunos ejercicios para practicar el nivel básico de Python:
+
+1. Escribe un programa que solicite al usuario un número entero y luego imprima el número multiplicado por 2.
+
+2. Escribe un programa que solicite al usuario dos números y luego imprima la suma, la resta, la multiplicación y la división de los números.
+
+3. Escribe un programa que solicite al usuario su nombre y luego imprima "Hola, [nombre del usuario]".
+
+4. Escribe un programa que solicite al usuario una cadena de texto y luego imprima la longitud de la cadena.
+
+5. Escribe un programa que solicite al usuario un número entero y luego determine si el número es par o impar.
+
+6. Escribe un programa que solicite al usuario dos números enteros y luego determine si el primer número es divisible por el segundo número.
+
+7. Escribe un programa que solicite al usuario una cadena de texto y luego imprima la cadena en mayúsculas.
+
+8. Escribe un programa que solicite al usuario una cadena de texto y luego imprima la cadena en minúsculas.
+
+9. Escribe un programa que solicite al usuario un número entero y luego determine si el número es positivo, negativo o cero.
+
+10. Escribe un programa que solicite al usuario su edad y luego determine si el usuario es mayor de edadEstos son solo algunos ejercicios básicos, pero puedes ir avanzando en la dificultad a medida que te sientas más cómodo. ¡Espero que te sean útiles!
+
+¡Por supuesto! Aquí van algunos ejercicios adicionales para practicar el nivel básico de Python:
+
+11. Escribe un programa que solicite una lista de números enteros al usuario y luego determine el número más grande de la lista.
+
+12. Escribe un programa que solicite una lista de números enteros al usuario y luego determine la suma de los números de la lista.
+
+13. Escribe un programa que solicite una lista de números enteros al usuario y luego determine si la lista está ordenada de menor a mayor.
+
+14. Escribe un programa que solicite una lista de números enteros al usuario y luego ordene la lista de mayor a menor.
+
+15. Escribe un programa que solicite una cadena de texto al usuario y luego determine si la cadena es un palíndromo (es decir, si se lee igual de izquierda a derecha que de derecha a izquierda).
+
+16. Escribe un programa que solicite al usuario un número entero y luego calcule el factorial de ese número.
+
+17. Escribe un programa que solicite una lista de números enteros al usuario y luego determine si hay algún número repetido en la lista.
+
+18. Escribe un programa que solicite una lista de números enteros al usuario y luego determine la mediana de la lista.
+
+19. Escribe un programa que solicite al usuario dos listas de números enteros y luego determine si las dos listas son iguales (es decir, si tienen los mismos elementos en el mismo orden).
+
+20. Escribe un programa que solicite al usuario una cadena de texto y luego determine si la cadena contiene solo letras o no.
+
+Espero que estos ejercicios te ayuden a practicar y mejorar tus habilidades en Python. ¡Ánimo!

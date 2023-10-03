@@ -1,0 +1,16 @@
+{
+  "name": "mi-pagina",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": ".js",
+  "scripts": {
+    "dev": "nodemon ./index.js"
+  },
+  "keywords": [],
+  "author": "Fabian",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "2.0.20"
+  }
+}

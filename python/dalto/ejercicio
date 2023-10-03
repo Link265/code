@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed May  5 21:58:52 2010
+
+@author: Link
+"""
+
+#ejercicio practico 2
+
+cadena = input("ingresa una frase: ")
+
+palabras = cadena.count(" ") + 1
+
+segundos = palabras * 0.5
+
+if segundos >= 60:
+    
+    print("tampoco te pedi un testamento")
+     
+print(f"te tardaste {segundos} segundos en decirlo y dijiste {palabras} palabras")
+
+mas_rapido = round(palabras * (0.5 * 0.7),2)
+
+print(f"si hablaras un 30% mas rapido lo dirias en {mas_rapido} segundos")

@@ -1,0 +1,9 @@
+%c - "char" "unsigned char"
+  %d - "int"
+  %i - "short" "int" "unsigned int" 
+  %li - "long"
+  %f - "float"
+  %lf - "double"
+  %Lf - "long double"
+
+  %s - "char texto[n]" secuencia de caracter

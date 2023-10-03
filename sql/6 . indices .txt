@@ -1,0 +1,13 @@
+los indices ayudan a hacer que una consulta se ejecute mas rapido sin embargo 
+
+--creando indice
+CREATE INDEX nombre ON (Columna1) --creando un indice llamado nombre para la columna1
+
+--Creando un indice que no permita valores duplicados
+CREATE UNIQUE INDEX nombre ON (Columna1) --creando un indice llamado nombre para la columna1
+
+--creando un indice que no permita que se que se repita un registro que tenga 2 campos identicos a otro registro
+CREATE UNIQUE INDEX nombre ON (Columna1,columna2) --permite que 2 registro tengan la columna 1 igual pero no la columna 1 y 2 al mismo tiempo
+
+--borrando indices 
+DROP INDEX nombre  -- borra el indice nombre

@@ -1,0 +1,5 @@
+las transacciones en sql son para evitar que la base de datos sufra cambios accidentales
+
+BEGIN; -- esta palabra clave inicia la transaccion
+COMMIT; -- establece la transaccion y modifica completamente la base de datos
+ROLLBACK; -- desace la transaccion y deja todo como estaba antes del BEGIN

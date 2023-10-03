@@ -1,0 +1,12 @@
+las vistas son referencias a una consulta
+
+CREATE VIEW nombre_de_vista AS (SELECT * FROM tabla); -- crea la vista
+
+--usando la vista
+SELECT * FROM nombre_de_vista -- ejecuta la consulata  a la que hace referencia
+
+--eliminado la vista 
+DROP VIEW nombre_de_vista
+
+--borra la vista solmente si existe
+DROP VIEW IF EXIST nombre_de_vista 
