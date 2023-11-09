@@ -1,4 +1,4 @@
-los indices ayudan a hacer que una consulta se ejecute mas rapido sin embargo 
+los indices ayudan a hacer que una consulta se ejecute mas rapido
 
 --creando indice
 CREATE INDEX nombre ON (Columna1) --creando un indice llamado nombre para la columna1

@@ -4,7 +4,7 @@ First Normal Form(1NF): NO colocar mas de un valor en un columna, cada elemento 
 apellido en una sola columna es mejor crear una columna diferente para cada uno
 
 Second Normal Form(2NF): NO colocar columnas que no dependan al 100% de la clave primaria, ejemplo en vez de colocar los datos de producto en la tabla de
-pedidos mejor ten una una tabla que este aparte solamente de productos y relacionala con la otra con el id del producto
+pedidos mejor ten una una tabla que este aparte solamente de productos y relacionala con la otra mediante el id del producto
 --NOTA: dependencia funcional parcial 
 
 Thirst Normal Form(3NF) : no crear dependencias transitivas, separar en 2 tablas si un atributo a depende de un atributo b que depende la clave primaria,

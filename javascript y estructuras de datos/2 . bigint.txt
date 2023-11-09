@@ -1,0 +1,22 @@
+En JavaScript, un BigInt es un tipo de dato introducido en ECMAScript 11 (también conocido como ES11) que se utiliza para representar números enteros arbitrariamente grandes. A diferencia del tipo de dato `number` en JavaScript, que está limitado por la precisión de 64 bits y, por lo tanto, tiene un límite superior, los BigInts pueden representar enteros con una precisión mucho mayor.
+
+Para crear un BigInt en JavaScript, simplemente agrega la letra "n" al final de un número entero literal o utiliza el constructor `BigInt()`. Aquí tienes ejemplos de cómo crear BigInts:
+
+```javascript
+const numeroEntero = 42;
+const miBigInt = 1234567890123456789012345678901234567890n;
+
+const otroBigInt = BigInt("9007199254740991"); // Puedes usar el constructor BigInt() con una cadena.
+```
+
+Es importante destacar que los BigInts no pueden usarse con operaciones matemáticas regulares que involucren números de punto flotante (números con decimales). Debes realizar operaciones matemáticas con otros BigInts o convertirlos a otros tipos de datos si es necesario. Por ejemplo:
+
+```javascript
+const bigintA = 1234567890n;
+const bigintB = 9876543210n;
+
+const suma = bigintA + bigintB; // Operación válida
+const resultado = suma.toString(); // Convierte el resultado a una cadena para su uso
+```
+
+Los BigInts son útiles cuando necesitas realizar cálculos con números enteros extremadamente grandes, como en aplicaciones científicas, financieras o cualquier otro contexto en el que la precisión y la magnitud de los números sean críticas. Sin embargo, ten en cuenta que los BigInts no pueden ser utilizados en todas las operaciones matemáticas y comparaciones de la misma manera que los números regulares (`number`), por lo que es importante tener en cuenta estas diferencias al trabajar con ellos en JavaScript.

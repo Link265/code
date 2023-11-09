@@ -1,0 +1,6 @@
+hola= input("ingrese algo :")
+print("hola como estas")
+bien= input ("ingrese algo :")
+print("me alegro")
+albion= input("ingrese algo :")
+print("albion online es un mmorpg donde tu escribes tu propia historia sin limitarte a seguir un camino pre establecido")

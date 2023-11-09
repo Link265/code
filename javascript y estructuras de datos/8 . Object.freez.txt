@@ -1,0 +1,1 @@
+Object.freeze(objeto) // hace que un objeto sea inmutable

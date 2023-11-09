@@ -1,0 +1,1 @@
+delete objeto.propiedad // elimina la propiedad del objeto

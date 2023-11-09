@@ -1,0 +1,18 @@
+¡Claro! Aquí te presento algunos ejercicios de estructuras (struct) en C que puedes resolver:
+
+Ejercicio 1:
+Crea una estructura llamada Punto que represente un punto en el plano cartesiano, con coordenadas x e y de tipo entero. Luego, escribe una función llamada distancia que reciba dos puntos como parámetros y calcule la distancia entre ellos utilizando la fórmula de la distancia euclidiana. Finalmente, muestra la distancia entre dos puntos dados.
+
+Ejercicio 2:
+Crea una estructura llamada Libro que represente un libro con los siguientes campos: titulo (cadena de caracteres), autor (cadena de caracteres), anio (entero) y precio (flotante). Escribe una función llamada mostrar_libro que reciba un libro como parámetro y muestre por pantalla su información.
+
+Ejercicio 3:
+Crea una estructura llamada Fecha que represente una fecha con campos dia, mes y anio, todos de tipo entero. Escribe una función llamada es_bisiesto que reciba una fecha como parámetro y devuelva 1 si el año de la fecha es bisiesto o 0 en caso contrario.
+
+Ejercicio 4:
+Crea una estructura llamada Rectangulo que represente un rectángulo con campos base y altura, ambos de tipo entero. Escribe una función llamada area_rectangulo que reciba un rectángulo como parámetro y calcule su área. Luego, muestra el área de un rectángulo dado.
+
+Ejercicio 5:
+Crea una estructura llamada Alumno que represente un alumno con campos nombre (cadena de caracteres) y nota (entero). Escribe una función llamada aprobar que reciba un alumno como parámetro y devuelva 1 si la nota es mayor o igual a 60, o 0 en caso contrario.
+
+Estos ejercicios te permitirán practicar la creación y manipulación de estructuras en C. Puedes intentar resolverlos por tu cuenta y luego verificar tus soluciones. ¡Buena suerte

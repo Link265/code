@@ -1,0 +1,21 @@
+La función parseInt() en JavaScript se utiliza para convertir una cadena en un número entero. Esta función toma dos argumentos: la cadena que se debe convertir y una base numérica opcional que especifica en qué base se encuentra la representación del número en la cadena. Aquí está la sintaxis básica:
+
+javascript
+Copy code
+parseInt(string[, radix]);
+string: La cadena que se va a convertir en un número entero.
+radix (opcional): La base numérica en la que se encuentra la representación del número en la cadena. Puede ser un número entre 2 y 36. Si este argumento se omite o es 0, JavaScript intentará determinar la base basándose en el formato de la cadena. Si no se puede determinar, se asumirá base 10.
+Ejemplos de uso de parseInt():
+
+javascript
+Copy code
+var numero = parseInt("123"); // Convierte la cadena "123" en el número 123
+var binario = parseInt("1010", 2); // Convierte la cadena binaria "1010" en el número decimal 10
+var octal = parseInt("075", 8); // Convierte la cadena octal "075" en el número decimal 61
+var hexadecimal = parseInt("1A", 16); // Convierte la cadena hexadecimal "1A" en el número decimal 26
+Es importante tener en cuenta que parseInt() analiza la cadena desde el principio hasta que se encuentra un carácter que no es válido en la base especificada o hasta el final de la cadena. Si no se puede analizar ningún dígito válido, la función devuelve NaN (Not-a-Number).
+
+javascript
+Copy code
+var noEsNumero = parseInt("abc"); // Devuelve NaN
+Por lo tanto, parseInt() es útil para convertir cadenas que representan números en valores numéricos reales que se pueden usar en cálculos matemáticos. Ten en cuenta que si deseas convertir una cadena en un número en punto flotante (con decimales), puedes usar la función parseFloat().

@@ -1,0 +1,39 @@
+En JavaScript, un símbolo (Symbol en inglés) es un tipo de dato primitivo introducido en ECMAScript 6 (también conocido como ES6) que se utiliza para crear valores únicos e inmutables. Los símbolos son a menudo utilizados como identificadores para propiedades de objetos, lo que los hace útiles en situaciones en las que es importante garantizar la unicidad de las claves.
+
+Puedes crear un símbolo utilizando la función `Symbol()` sin la necesidad de utilizar la palabra clave `new`. Por ejemplo:
+
+```javascript
+const miSimbolo = Symbol();
+```
+
+También puedes proporcionar una descripción opcional cuando creas un símbolo:
+
+```javascript
+const otroSimbolo = Symbol("Descripción de mi símbolo");
+```
+
+La descripción es útil para propósitos de depuración o para diferenciar símbolos similares.
+
+Una característica importante de los símbolos es que son únicos, lo que significa que dos símbolos con la misma descripción o sin descripción son diferentes entre sí. Por ejemplo:
+
+```javascript
+const simbolo1 = Symbol("miSimbolo");
+const simbolo2 = Symbol("miSimbolo");
+
+console.log(simbolo1 === simbolo2); // false
+```
+
+Los símbolos son a menudo utilizados como propiedades de objetos para evitar colisiones de nombres de propiedades en el caso de que múltiples partes del código accedan al mismo objeto.
+
+Por ejemplo:
+
+```javascript
+const miObjeto = {};
+
+const claveSimbolo = Symbol("claveUnica");
+miObjeto[claveSimbolo] = "Valor asociado al símbolo";
+
+console.log(miObjeto[claveSimbolo]); // "Valor asociado al símbolo"
+```
+
+Debido a su unicidad, los símbolos son útiles para crear propiedades "privadas" en objetos, ya que no son tan fáciles de sobrescribir o acceder accidentalmente como las propiedades con nombres de cadena.

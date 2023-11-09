@@ -1,0 +1,1 @@
+objeto.hasOwnProperty(propiedad) // comprueba si posee esa propiedad

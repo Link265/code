@@ -1,6 +1,5 @@
 const binary = (num) =>{
 	let cadena = "";
-	let result;
 	for (let i = 128 ; i > 0.5; i/=2) {
 		if(num >= i){
 			cadena += "1";
